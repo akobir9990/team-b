@@ -1,5 +1,5 @@
 function App() {
-  return <div>app</div>;
+  return <div>TEAM-B</div>;
 }
 
 export default App;
