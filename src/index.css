@@ -3,16 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-li {
-  list-style: none;
+body {
+  background: var(--main-bg-page, #fbf8ec);
 }
+
+.container {
+  width: 1440px;
+  padding: 10px 116px;
+  margin: 0 auto;
+  min-height: 72px;
+}
+
 a {
   text-decoration: none;
 }
-input:focus {
-  outline: none;
-}
-button {
-  background: transparent;
+.mainComponents .homeComponent {
+  margin-bottom: 120px;
 }
