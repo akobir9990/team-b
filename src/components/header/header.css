@@ -1,0 +1,115 @@
+@import "../../assets/fonts.css";
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  padding: 8px;
+  margin: 0 16px 0 40px;
+  border-radius: 4px;
+  border: none;
+  gap: 8px;
+  background: #70c05b;
+  cursor: pointer;
+}
+.catalog span {
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 26px 0 0;
+  color: rgba(255, 255, 255, 1);
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px;
+  gap: 10px;
+  border: 1px solid rgba(112, 192, 91, 1);
+}
+.search img {
+  cursor: pointer;
+}
+
+#searchInput {
+  border: none;
+  background: transparent;
+}
+#searchInput:focus {
+  outline: none;
+}
+#searchInput::placeholder {
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.btns {
+  display: flex;
+  margin-left: 40px;
+  gap: 24px;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+.btn span {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  font-family: "Rubik-400";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+.admin {
+  display: flex;
+  width: 217px;
+  height: 72px;
+  padding: 8px;
+  margin-left: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+.admin .ava {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.admin .arrowDown {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.admin span {
+  color: var(--onSurface, #232323);
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

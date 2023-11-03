@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Rubik-300";
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Rubik-300-italic";
+  src: url(../fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Rubik-400";
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik-400-italic";
+  src: url(../fonts/Rubik-Italic.ttf);
+}
+@font-face {
+  font-family: "Rubik-500";
+  src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "Rubik-500-italic";
+  src: url(../fonts/Rubik-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "Rubik-600";
+  src: url(../fonts/Rubik-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Rubik-600-italic";
+  src: url(../fonts/Rubik-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Rubik-700";
+  src: url(../fonts/Rubik-Bold.ttf);
+}
+@font-face {
+  font-family: "Rubik-700-italic";
+  src: url(../fonts/Rubik-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "Rubik-800";
+  src: url(../fonts/Rubik-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Rubik-800-italic";
+  src: url(../fonts/Rubik-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Rubik-900";
+  src: url(../fonts/Rubik-Black.ttf);
+}
+@font-face {
+  font-family: "Rubik-900-italic";
+  src: url(../fonts/Rubik-BlackItalic.ttf);
+}
