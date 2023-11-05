@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import burger from "../../assets/images/burger.svg";
@@ -14,11 +14,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -42,16 +38,13 @@ function Header() {
         </div>
         <div className="btns">
           <NavLink to="/likes" className="likes btn">
-            <img src={likes} alt="" />
-            <span>Избранное</span>
+            <img src={likes} alt="" /> <span>Избранное</span>
           </NavLink>
           <NavLink to="/orders" className="orders btn">
-            <img src={products} alt="" />
-            <span>продукты</span>
+            <img src={products} alt="" /> <span>продукты</span>
           </NavLink>
           <NavLink to="/basket" className="basket btn">
-            <img src={basket} alt="" />
-            <span>Корзина</span>
+            <img src={basket} alt="" /> <span>Корзина</span>
           </NavLink>
         </div>
         <div className="admin">
@@ -64,8 +57,11 @@ function Header() {
       </div>
       {isOpen && (
         <div className="modal">
-          {'Молоко, сыр, яйцо , Хлеб , Фрукты и овощи , Замороженные продукты'}
-          <button className="btnclos" onClick={closeModal}>closet</button>
+          <NavLink to="/milk">Молоко</NavLink>
+          <NavLink to="/cheese">Сыр</NavLink> <NavLink to="/eggs">Яйцо</NavLink>
+          <NavLink to="/bread">Хлеб</NavLink>
+          <NavLink to="/fruits">Фрукты и овощи</NavLink>
+          <NavLink to="/frozen">Замороженные продукты</NavLink>
         </div>
       )}
     </div>
