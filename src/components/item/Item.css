@@ -1,4 +1,4 @@
-.card{
+.promotion{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -9,31 +9,44 @@
     box-shadow: 0px 5px 15px -10px black;
     border-radius: 10px;
 }
-.card-img{
-    width: 100%;
-    height: 40%;
+.promotion-img{
+    color: var(--main-on-surface, #414141);
+
+    /* Desc/Text-Bold/M */
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
 }
-.card-name{
-    margin: 0px;
-    width: 100%;
-    height: 10%;
-    font-size: 19px;
-    margin-left: 10px;
+.promotion-name{
+    align-self: stretch;
+    color: var(--main-on-surface, #414141);
+    /* Desc/Text/S */
+    font-family: "Rubik 400";
+    font-size: 16px;
+    font-style: normal;
+    
+    line-height: 150%; /* 24px */
 }
-.card-rating{
+
+.promotion-rating{
     width: 100%;
     height: 20px;
     margin-left: 10px;
 }
-.card-but{
-    width: 90%;
-    height: 40px;
-    border: 1px solid #70C05B;
-    background-color: white;
-    color: #70C05B;
-    margin: 0 auto;
-}
-.card-but:hover{
-    background-color: #ed6a07;
-    color: white;
+.promotion-but{
+    display: flex;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    color: var(--main-secondary, #70C05B);
+    text-align: center;
+    /* Desc/Text/S */
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
 }
