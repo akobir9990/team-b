@@ -1,0 +1,39 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: white;
+    width: 22.1%;
+    height: 400px;
+    box-shadow: 0px 5px 15px -10px black;
+    border-radius: 10px;
+}
+.card-img{
+    width: 100%;
+    height: 40%;
+}
+.card-name{
+    margin: 0px;
+    width: 100%;
+    height: 10%;
+    font-size: 19px;
+    margin-left: 10px;
+}
+.card-rating{
+    width: 100%;
+    height: 20px;
+    margin-left: 10px;
+}
+.card-but{
+    width: 90%;
+    height: 40px;
+    border: 1px solid #70C05B;
+    background-color: white;
+    color: #70C05B;
+    margin: 0 auto;
+}
+.card-but:hover{
+    background-color: #ed6a07;
+    color: white;
+}
