@@ -57,11 +57,12 @@ function Header() {
       </div>
       {isOpen && (
         <div className="modal">
-          <NavLink to="/milk">Молоко</NavLink>
-          <NavLink to="/cheese">Сыр</NavLink> <NavLink to="/eggs">Яйцо</NavLink>
-          <NavLink to="/bread">Хлеб</NavLink>
-          <NavLink to="/fruits">Фрукты и овощи</NavLink>
-          <NavLink to="/frozen">Замороженные продукты</NavLink>
+          <NavLink className="navmodel" to="/milk">Молоко</NavLink>
+          <NavLink className="navmodel" to="/bread">Хлеб</NavLink>
+          <NavLink className="navmodel" to="/fruits">Фрукты и овощи</NavLink>
+          <NavLink className="navmodel" to="/cheese">Сыр</NavLink> 
+          <NavLink className="navmodel" to="/eggs">Яйцо</NavLink>
+          <NavLink className="navmodel" to="/frozen">Замороженные продукты</NavLink>
         </div>
       )}
     </div>

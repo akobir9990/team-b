@@ -115,11 +115,17 @@
 }
 
 .modal{
+  padding: 40px 0;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: space-around;
+  gap: 35px;
+  background-color: white;
   justify-content: center;
-  
+  color: black;
+}
+.navmodel{
+  color: black;
 }
 .btnclos{
 background:transparent;
