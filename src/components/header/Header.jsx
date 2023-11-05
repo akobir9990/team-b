@@ -1,4 +1,5 @@
-import "./header.css";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 import burger from "../../assets/images/burger.svg";
 import searchIcon from "../../assets/images/search.svg";
@@ -7,22 +8,27 @@ import products from "../../assets/images/productsIcon.svg";
 import basket from "../../assets/images/basketIcon.svg";
 import arrowDown from "../../assets/images/arrowDown.svg";
 import user from "../../assets/images/user.svg";
-import { NavLink } from "react-router-dom";
+import "./header.css";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div>
       <div className="container header-container">
         <div className="logo">
           <img src={logo} alt="" />
         </div>
-        <button className="catalog">
-          <img
-            src={burger}
-            alt="burger"
-            className="burger
-          "
-          />
+        <button className="catalog" onClick={openModal}>
+          <img src={burger} alt="burger" className="burger" />
           <span>Каталог</span>
         </button>
         <div className="search">
@@ -56,6 +62,12 @@ function Header() {
           <img src={arrowDown} alt="icon" className="arrowDown" />
         </div>
       </div>
+      {isOpen && (
+        <div className="modal">
+          {'Молоко, сыр, яйцо , Хлеб , Фрукты и овощи , Замороженные продукты'}
+          <button className="btnclos" onClick={closeModal}>closet</button>
+        </div>
+      )}
     </div>
   );
 }
