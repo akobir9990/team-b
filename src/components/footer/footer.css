@@ -1,0 +1,9 @@
+.footer-container-bg {
+  background-image: url(../../assets/images/bgFooter.svg);
+  background-repeat: repeat-x;
+}
+.footer-container {
+  width: 100%;
+  border: 1px solid red;
+  height: 120px;
+}
