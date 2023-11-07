@@ -1,0 +1,81 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.basket-item__div {
+  display: flex;
+width: 876px;
+align-items: flex-start;
+gap: 16px;
+border-radius: 4px;
+background: var(--main-surface, #FFF);
+box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.basket-item__text {
+  align-self: stretch;
+color:  #414141;
+font-family: "Rubik-400";
+font-size: 16px;
+font-style: normal;
+line-height: 150%; 
+}
+.basket-item__text2 {
+  color: black;
+font-family: "Roboto-700";
+font-size: 12px;
+font-style: normal;
+line-height: 150%; 
+margin-left: -355px;
+margin-top: 41px;
+}
+.basket-item__div2 {
+  width: 350px;
+  height: 70px;
+  margin-left: 360px;
+  border-radius: 4px;
+background: var(--main-surface, #FFF);
+}
+.basket-item__button {
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  background-color: #70C05B;
+  border-radius: 3px 0px 0px 3px;
+  margin-top: 5px;
+  margin-left: 130px;
+}
+.raqam {
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  background-color: #70C05B;
+  margin-top: -30px;
+  margin-left: 160px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.basket-item__button2 {
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  background-color: #70C05B;
+  border-radius: 0px 3px 3px 0px;
+  margin-left: 190px;
+  position: absolute;
+  top: 13px;
+}
+.basket-item__text3 {
+  flex: 1 0 0;
+color:  black;
+text-align: right;
+font-family: "Rubik-700";
+font-size: 18px;
+font-style: normal;
+line-height: 150%;
+position: absolute;
+top: 1px;
+margin-left: 270px;
+}
