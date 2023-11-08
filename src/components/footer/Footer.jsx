@@ -1,3 +1,4 @@
+import "../footer/Footer.css"
 function Footer() {
   return <footer className="footer">
 	<div className="container">
@@ -6,7 +7,7 @@ function Footer() {
 				<a href="index.html" className="footer__logo-link">
           <img src="img/logo-footer.png" alt="" className="footer__logo" />
           </a>
-				<ul class="footer__menu-list">
+				<ul className="footer__menu-list">
 					<li className="footer__menu-item"><a href="about.html" className="footer__menu-link">О компании</a></li>
 					<li className="footer__menu-item"><a href="contacts.html" className="footer__menu-link">Контакты</a></li>
 					<li className="footer__menu-item"><a href="openings.html" className="footer__menu-link">Вакансии</a></li>
