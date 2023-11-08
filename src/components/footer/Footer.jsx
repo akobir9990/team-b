@@ -28,7 +28,7 @@ function Footer() {
 					<li className="footer__contact-item"><a href="" className="footer__contact-link"><img src="img/svg/odnaklasshiki.svg"
 								alt="" /></a></li>
 				</ul>
-				<a href="tel:+88007773333" className="footer__contact-tel _icon-phone">8 800 777 33 33</a>
+				<a href="tel:+88007773333" className="j _icon-phone">8 800 777 33 33</a>
 			</nav>
 		</div>
 	</div>

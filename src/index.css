@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  background: var(--main-bg-page, #fbf8ec);
+  background-image: url('https://wallpapers.com/images/hd/food-4k-m37wpodzrcbv5gvw.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {

@@ -5,9 +5,9 @@
 
 .footer__content{
     padding: 45px;
-    background-color: coral;
-    border: solid black;
+    background-image: url('https://www.freewebheaders.com/wp-content/gallery/liquids-headers/orange-juice-splash-left-right-borders-on-white-background-header.jpg');
     color: black;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
 }
@@ -31,4 +31,8 @@
 }
 .footer__contact-tel{
     color: black;
+}
+._icon-phone{
+    color: black;
+    font-size: 20px;
 }
