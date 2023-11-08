@@ -5,7 +5,7 @@
 
 .footer__content{
     padding: 45px;
-    background-image: url('https://www.freewebheaders.com/wp-content/gallery/liquids-headers/orange-juice-splash-left-right-borders-on-white-background-header.jpg');
+    background-image: url('./img/footer-bg.jfif');
     color: black;
     font-size: 18px;
     display: flex;
