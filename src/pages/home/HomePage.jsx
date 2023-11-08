@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
@@ -11,7 +12,8 @@ function HomePage() {
     <div>
       <Header />
       <div className="container">
-    <Item />
+       <Item />
+       <Navigate />
         <Stati />
       </div>
       <Footer />

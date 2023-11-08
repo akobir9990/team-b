@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  background: var(--main-bg-page, #fbf8ec);
+  background-image: url('../src/components/footer/img/food-4k-m37wpodzrcbv5gvw.jpg');
+  background-position: inherit;
+  background-repeat: round;
 }
 
 .container {
   width: 1440px;
-  padding: 10px 116px;
+  padding:20px ;
   margin: 0 auto;
   min-height: 72px;
 }
