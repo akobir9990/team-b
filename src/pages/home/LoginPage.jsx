@@ -4,7 +4,7 @@ function Login() {
   return (
     <div style={containerStyle}>
       <div style={formGroupStyle}>
-        <label htmlFor="email">Email address</label>
+        <label htmlFor="text">Email address</label>
         <input type="text" id="text" placeholder="name" style={inputStyle} />
       </div>
       <div style={formGroupStyle}>
