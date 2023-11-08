@@ -3,7 +3,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: azure;
 }
 .catalog {
   display: flex;

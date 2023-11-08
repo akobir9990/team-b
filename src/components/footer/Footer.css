@@ -5,8 +5,7 @@
 
 .footer__content{
     padding: 45px;
-    background-image: url('./img/footer-bg.jfif');
-    color: black;
+    border: 3px dotted white;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
@@ -27,12 +26,25 @@
     align-items: center;
 }
 .footer__menu-link{
-    color: black;
+    padding: 12px 18px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
 }
-.footer__contact-tel{
-    color: black;
+.footer__menu-link:hover{
+    padding: 13px 19px;
+    color: orange;
+    border: 1px solid orange;
 }
 ._icon-phone{
-    color: black;
+    padding: 12px 18px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
     font-size: 20px;
+}
+._icon-phone:hover{
+    padding: 13px 19px;
+    border: 1px solid orange;
+    color: orange;
 }
