@@ -18,7 +18,7 @@ function HomePage() {
       </div>
       <Footer />
     </div>
-  );
+  ); 
 }
 
 export default HomePage;

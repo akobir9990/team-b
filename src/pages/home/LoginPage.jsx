@@ -1,17 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'password') {
+      setPassword(value);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Login logic here
+    console.log("Email:", email);
+    console.log("Password:", password);
+  };
+
   return (
     <div style={containerStyle}>
-      <div style={formGroupStyle}>
-        <label htmlFor="text">Email address</label>
-        <input type="text" id="text" placeholder="name" style={inputStyle} />
-      </div>
-      <div style={formGroupStyle}>
-        <label htmlFor="password">Password.......</label>
-        <input type="password" id="password" placeholder="********" style={inputStyle} />
-      </div>
-      <button type="submit" style={buttonStyle}>Login</button>
+      <form onSubmit={handleSubmit}>
+        <div style={formGroupStyle}>
+          <label htmlFor="email">Email address</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="name"
+            value={email}
+            onChange={handleInputChange}
+            style={inputStyle}
+          />
+        </div>
+        <div style={formGroupStyle}>
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="********"
+            value={password}
+            onChange={handleInputChange}
+            style={inputStyle}
+          />
+        </div>
+        <button type="submit" style={buttonStyle}>Login</button>
+      </form>
     </div>
   );
 }
