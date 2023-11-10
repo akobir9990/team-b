@@ -1,7 +1,6 @@
 import Header from "../../components/header/Header";
 import { useGlobalContext } from "../../context";
 import rasm from "../../assets/images/stati-img.png";
-import "./allarticles.css";
 
 function AllPages() {
   const { statiArr } = useGlobalContext();
