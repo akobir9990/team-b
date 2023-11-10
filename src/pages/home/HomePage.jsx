@@ -1,8 +1,10 @@
 // import { Navigate } from "react-router-dom";
-import Navigate from "../../components/Navigate/Navigate";
+
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Stocks from "../../components/stocks/Stocks";
+import Stati from "../../components/stati/stati";
+import Map from "../../components/map/Map";
 
 function HomePage(getLSBasket, basket, setBasket) {
   return (
@@ -14,7 +16,8 @@ function HomePage(getLSBasket, basket, setBasket) {
           basket={basket}
           setBasket={setBasket}
         />
-        <Navigate />
+        <Stati />
+        <Map />
       </div>
       <Footer />
     </div>

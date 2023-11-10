@@ -139,7 +139,6 @@ function Admin() {
                 <h2 className="basketItemName">{item.name}</h2>
                 <h3 className="basketItemPrice">{item.price} ₽</h3>
               </div>
-
               <button
                 className="delBTN"
                 onClick={() =>

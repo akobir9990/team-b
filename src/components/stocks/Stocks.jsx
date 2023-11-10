@@ -7,7 +7,7 @@ import { useGlobalContext } from "../../context";
 import { NavLink } from "react-router-dom";
 
 function Stocks() {
-  const { setBasket, products, setProducts } = useGlobalContext();
+  const { setBasket, productsApi, setProductsApi } = useGlobalContext();
 
   const addToBasket = (item) => {
     const newBasketItem = item;
@@ -19,7 +19,7 @@ function Stocks() {
 
   fetch("https://api.escuelajs.co/api/v1/products")
     .then((response) => response.json())
-    .then((data) => setProducts(data));
+    .then((data) => setProductsApi(data));
 
   return (
     <div className="stocks-container">
@@ -31,7 +31,7 @@ function Stocks() {
         </button>
       </div>
       <div className="stocksBox">
-        {products.map((item) => {
+        {productsApi.map((item) => {
           return (
             <div key={item.id}>
               <div className="promotion">

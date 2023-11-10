@@ -17,6 +17,8 @@ const AppProvider = ({ children }) => {
       : [];
   };
   const [products, setProducts] = useState(getProducts());
+  const [productsApi, setProductsApi] = useState([]);
+
   const getBasket = () => {
     return localStorage.getItem("basket")
       ? JSON.parse(localStorage.getItem("basket"))
@@ -59,6 +61,27 @@ const AppProvider = ({ children }) => {
     localStorage.setItem("products", JSON.stringify(products));
   }, [products]);
 
+  const statiArr = [
+    {
+      id: 1,
+      name: "Режим использования масок и перчаток на территории магазинов",
+      desc: 'Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.',
+      date: "05.03.2021",
+    },
+    {
+      id: 2,
+      name: "Весеннее настроение для каждой",
+      desc: "8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.",
+      date: "05.03.2021",
+    },
+    {
+      id: 3,
+      name: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
+      desc: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
+      date: "22.02.2020",
+    },
+  ];
+
   return (
     <AppContext.Provider
       value={{
@@ -79,6 +102,9 @@ const AppProvider = ({ children }) => {
         setProductCategory,
         addProduct,
         getBasket,
+        statiArr,
+        productsApi,
+        setProductsApi,
       }}
     >
       {children}

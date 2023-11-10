@@ -1,3 +1,30 @@
+.map-container {
+  margin: 50px 0;
+}
+
 button {
-    margin: 5px;
-  }
+  margin: 5px;
+}
+.card {
+  margin: 20px 0;
+}
+.mapBTN {
+  border: 1px solid #70c05b;
+  border-radius: 5px;
+  padding: 10px 5px;
+  color: #70c05b;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.mapBTN:hover {
+  border: 1px solid white;
+  background: #70c05b;
+  color: white;
+}
+.currentMap {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-600";
+  font-size: 36px;
+  font-style: normal;
+  margin: 20px 0;
+}

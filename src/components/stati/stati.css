@@ -1,11 +1,36 @@
-* {
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+.stati-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 150px 0 0 0;
 }
+
 .stati {
   width: 375px;
   background-color: #fff;
+}
+.statiTitle {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-700";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 150%;
+  margin: 40px 0;
+}
+.statiTitle .button {
+  display: flex;
+  width: 168px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 .stati-texts {
   padding: 10px;

@@ -29,7 +29,10 @@ function Header() {
         </div>
         <button className="catalog" onClick={openModal}>
           <img src={burger} alt="burger" className="burger" />
-          <span>Каталог</span>
+
+          <NavLink to="/catalog">
+            <span>Каталог</span>
+          </NavLink>
         </button>
         <div className="search">
           <input
@@ -54,7 +57,7 @@ function Header() {
         <div className="admin">
           <img src={userIcon} alt="ava" className="ava" />
           <NavLink to="/login">
-            <span>{user}</span>
+            <span>LogIn</span>
           </NavLink>
           <img src={arrowDown} alt="icon" className="arrowDown" />
         </div>

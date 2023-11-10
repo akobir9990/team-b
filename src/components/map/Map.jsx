@@ -19,24 +19,24 @@ const maps = [
 function Map() {
   const [currentMap, setCurrentMap] = useState(0);
   return (
-    <>
+    <div className="map-container">
       <div className="card">
         {maps.map((map, index) => {
           return (
-            <button onClick={() => setCurrentMap(index)}>{map.button}</button>
+            <button className="mapBTN" onClick={() => setCurrentMap(index)}>{map.button}</button>
           );
         })}
       </div>
-      <h3>{maps[currentMap].button}</h3>
+      <h3 className="currentMap"> {maps[currentMap].button}</h3>
       <iframe
-        width="800px"
+        width="100%"
         height="500px"
         style={{ border: "3px solid #646cffaa", borderRadius: "15px" }}
         src={maps[currentMap].src}
         allowFullScreen={true}
         loading="lazy"
       ></iframe>
-    </>
+    </div>
   );
 }
 
