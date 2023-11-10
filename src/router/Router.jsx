@@ -1,15 +1,26 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/home/HomePage";
 import Admin from "../pages/admin/Admin";
-function Router(products, setProducts) {
+import Login from "../pages/login/Login";
+import Secure from "../pages/secure/Secure";
+import Basket from "../pages/basket/Basket";
+import AllProducts from "../pages/allProducts/AllProducts";
+function Router() {
   return (
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
           path="/admin"
-          element={<Admin products={products} setProducts={setProducts} />}
+          element={
+            <Secure>
+              <Admin />
+            </Secure>
+          }
         />
+        <Route path="/login" element={<Login />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/allproducts" element={<AllProducts />} />
       </Routes>
     </>
   );

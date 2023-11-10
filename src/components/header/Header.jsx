@@ -7,10 +7,12 @@ import likes from "../../assets/images/likeIcon.svg";
 import products from "../../assets/images/productsIcon.svg";
 import basket from "../../assets/images/basketIcon.svg";
 import arrowDown from "../../assets/images/arrowDown.svg";
-import user from "../../assets/images/user.svg";
+import userIcon from "../../assets/images/user.svg";
 import "./header.css";
+import { useGlobalContext } from "../../context";
 
 function Header() {
+  const { user } = useGlobalContext();
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -18,10 +20,12 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className="header_bg">
       <div className="container header-container">
         <div className="logo">
-          <img src={logo} alt="" />
+          <NavLink to="/">
+            <img src={logo} alt="" />
+          </NavLink>
         </div>
         <button className="catalog" onClick={openModal}>
           <img src={burger} alt="burger" className="burger" />
@@ -48,21 +52,33 @@ function Header() {
           </NavLink>
         </div>
         <div className="admin">
-          <img src={user} alt="ava" className="ava" />
+          <img src={userIcon} alt="ava" className="ava" />
           <NavLink to="/login">
-            <span>LogIn</span>
+            <span>{user}</span>
           </NavLink>
           <img src={arrowDown} alt="icon" className="arrowDown" />
         </div>
       </div>
       {isOpen && (
         <div className="modal">
-          <NavLink className="navmodel" to="/milk">Молоко</NavLink>
-          <NavLink className="navmodel" to="/bread">Хлеб</NavLink>
-          <NavLink className="navmodel" to="/fruits">Фрукты и овощи</NavLink>
-          <NavLink className="navmodel" to="/cheese">Сыр</NavLink> 
-          <NavLink className="navmodel" to="/eggs">Яйцо</NavLink>
-          <NavLink className="navmodel" to="/frozen">Замороженные продукты</NavLink>
+          <NavLink className="navmodel" to="/milk">
+            Молоко
+          </NavLink>
+          <NavLink className="navmodel" to="/bread">
+            Хлеб
+          </NavLink>
+          <NavLink className="navmodel" to="/fruits">
+            Фрукты и овощи
+          </NavLink>
+          <NavLink className="navmodel" to="/cheese">
+            Сыр
+          </NavLink>
+          <NavLink className="navmodel" to="/eggs">
+            Яйцо
+          </NavLink>
+          <NavLink className="navmodel" to="/frozen">
+            Замороженные продукты
+          </NavLink>
         </div>
       )}
     </div>
