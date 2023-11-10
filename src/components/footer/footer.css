@@ -1,50 +1,50 @@
-*{
-    text-decoration: none;
-    list-style: none;
+* {
+  text-decoration: none;
+  list-style: none;
 }
 
-.footer__content{
-    padding: 45px;
-    border: 3px dotted white;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
+.footer__content {
+  padding: 45px;
+
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer_menu{
-    width: 10%;
-    display: flex;
-    align-items:center;
+.footer_menu {
+  width: 10%;
+  display: flex;
+  align-items: center;
 }
-.footer__menu-list{
-    color: black;
-    display: flex;
-    gap: 50px;
+.footer__menu-list {
+  color: black;
+  display: flex;
+  gap: 50px;
 }
-.footer__contact{
-    display: flex;
-    align-items: center;
+.footer__contact {
+  display: flex;
+  align-items: center;
 }
-.footer__menu-link{
-    padding: 12px 18px;
-    border: 1px solid white;
-    border-radius: 30px;
-    color: white;
+.footer__menu-link {
+  padding: 12px 18px;
+
+  border-radius: 30px;
+  color: black;
 }
-.footer__menu-link:hover{
-    padding: 13px 19px;
-    color: orange;
-    border: 1px solid orange;
+.footer__menu-link:hover {
+  padding: 13px 19px;
+  color: orange;
+  border: 1px solid orange;
 }
-._icon-phone{
-    padding: 12px 18px;
-    border: 1px solid white;
-    border-radius: 30px;
-    color: white;
-    font-size: 20px;
+._icon-phone {
+  padding: 12px 18px;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
 }
-._icon-phone:hover{
-    padding: 13px 19px;
-    border: 1px solid orange;
-    color: orange;
+._icon-phone:hover {
+  padding: 13px 19px;
+  border: 1px solid orange;
+  color: orange;
 }

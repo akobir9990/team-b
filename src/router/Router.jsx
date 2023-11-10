@@ -1,15 +1,15 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/home/HomePage";
-import Login from "../pages/home/LoginPage";
-import Meps from "../pages/home/MepsPage"
-
-function Router() {
+import Admin from "../pages/admin/Admin";
+function Router(products, setProducts) {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Login />} /> 
-        <Route path="/home" element={<HomePage  />} />
-        <Route path="/home" element={<MepsPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/admin"
+          element={<Admin products={products} setProducts={setProducts} />}
+        />
       </Routes>
     </>
   );

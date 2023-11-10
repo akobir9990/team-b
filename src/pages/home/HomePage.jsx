@@ -1,20 +1,20 @@
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
+import Navigate from "../../components/Navigate/Navigate";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import Stocks from "../../components/stocks/Stocks";
 
-import Item from "../../components/item/item";
-
-import Stati from "../../components/stati/stati";
-
-
-function HomePage() {
+function HomePage(getLSBasket, basket, setBasket) {
   return (
     <div>
       <Header />
       <div className="container">
-       <Item />
-       <Navigate />
-        <Stati />
+        <Stocks
+          getLSBasket={getLSBasket}
+          basket={basket}
+          setBasket={setBasket}
+        />
+        <Navigate />
       </div>
       <Footer />
     </div>

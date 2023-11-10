@@ -1,9 +1,11 @@
 @import "../../assets/fonts.css";
 
+.header_bg {
+  background: var(--surface, #fff);
+}
 .header-container {
   display: flex;
   align-items: center;
-  background-color: azure;
 }
 .catalog {
   display: flex;
@@ -114,7 +116,7 @@
   line-height: 150%;
 }
 
-.modal{
+.modal {
   padding: 40px 0;
   text-align: center;
   display: flex;
@@ -124,14 +126,14 @@
   justify-content: center;
   color: black;
 }
-.navmodel{
+.navmodel {
   color: black;
 }
-.btnclos{
-background:transparent;
-padding: 10px 10px;
-border: none;
-background-color: red;
-border-radius: 4px;
-color: aliceblue;
+.btnclos {
+  background: transparent;
+  padding: 10px 10px;
+  border: none;
+  background-color: red;
+  border-radius: 4px;
+  color: aliceblue;
 }
